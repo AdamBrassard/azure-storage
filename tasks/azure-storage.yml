@@ -1,0 +1,10 @@
+---
+- name: Create a General-Purpose V1, General-Purpose V2 or Blob Storage Account
+  azure_rm_storageaccount:
+    name: "{{ storacc_name }}"
+    resource_group: "{{ resource_group }}"
+    kind: "{{ storacc_kind }}"
+    account_type: "{{ storacc_type }}"
+    https_only: "{{ storacc_https_only | default(omit,true) }}"
+    access_tier: "{{ storacc_access_tier | default(omit,true) }}"
+    

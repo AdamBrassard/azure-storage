@@ -1,0 +1,3 @@
+---
+# tasks file for azure-storage
+- include_tasks: azure-storage.yml
