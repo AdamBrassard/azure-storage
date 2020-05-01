@@ -37,17 +37,16 @@ Example Playbook
 # Single Rule Create
 
 ---
-
 - name: Create Azure Storage Account
   hosts: localhost
   pre_tasks:
     - name: setting up storage account
       set_fact:
-        STORACC_NAME: "test0"
-        STORACC_KIND: "BlobStorage"
-        STORACC_TYPE: "Standard_RAGRS"
-        STORACC_ACCESS_TIER: "Cool"
-        STORACC_HTTPS_ONLY: "true"
+        storacc_name: "test0"
+        storacc_kind: "BlobStorage"
+        storacc_type: "Standard_RAGRS"
+        storacc_access_tier: "Cool"
+        storacc_https_only: "true"
 
   connection: local
 
