@@ -48,6 +48,8 @@ Example Playbook
         storacc_access_tier: "Cool"
         storacc_https_only: "true"
 
+        resource_group: "myRG"
+
   connection: local
 
   roles:
